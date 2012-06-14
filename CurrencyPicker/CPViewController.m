@@ -66,7 +66,7 @@
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView
 numberOfRowsInComponent:(NSInteger)component {
-    return [self.currencyCodes currencyCount];
+    return self.currencyCodes.currencyCount;
 }
 
 #pragma mark Picker Delegate Methods

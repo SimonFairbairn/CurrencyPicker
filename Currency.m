@@ -26,7 +26,6 @@
     if ( self ) {
         NSLocale* currentLocale = [NSLocale currentLocale];
         NSMutableArray* keptCurrencies = [[NSMutableArray alloc] init];        
-        NSMutableDictionary* keptCountries = [[NSMutableDictionary alloc] init];
         NSArray* currencies = [NSLocale availableLocaleIdentifiers];
         
         for ( NSString* currency in currencies ) {
@@ -56,8 +55,6 @@
             }
             
         } 
-        NSLog(@"%@", keptCountries);
-        NSLog(@"%@", keptCurrencies);
         _validCurrencies = keptCurrencies;
         _currentLocale = currentLocale;
         
@@ -66,7 +63,7 @@
 }
 
 -(int)currencyCount {
-    return [self.validCurrencies count];
+    return self.validCurrencies.count;
 }
 
 
