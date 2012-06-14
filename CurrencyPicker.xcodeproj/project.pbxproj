@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F41E100F158A327500D8C7B0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41E100E158A327500D8C7B0 /* UIKit.framework */; };
+		F41E1011158A327500D8C7B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41E1010158A327500D8C7B0 /* Foundation.framework */; };
+		F41E1013158A327500D8C7B0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41E1012158A327500D8C7B0 /* CoreGraphics.framework */; };
+		F41E1019158A327500D8C7B0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F41E1017158A327500D8C7B0 /* InfoPlist.strings */; };
+		F41E101B158A327500D8C7B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F41E101A158A327500D8C7B0 /* main.m */; };
+		F41E101F158A327500D8C7B0 /* CPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F41E101E158A327500D8C7B0 /* CPAppDelegate.m */; };
+		F41E1022158A327600D8C7B0 /* CPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41E1021158A327600D8C7B0 /* CPViewController.m */; };
+		F41E1025158A327600D8C7B0 /* CPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41E1023158A327600D8C7B0 /* CPViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F41E100A158A327500D8C7B0 /* CurrencyPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F41E100E158A327500D8C7B0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F41E1010158A327500D8C7B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F41E1012158A327500D8C7B0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F41E1016158A327500D8C7B0 /* CurrencyPicker-Info.plist */ = {isa = PBXFileReference; path = "CurrencyPicker-Info.plist"; sourceTree = "<group>"; };
+		F41E1018158A327500D8C7B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F41E101A158A327500D8C7B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F41E101C158A327500D8C7B0 /* CurrencyPicker-Prefix.pch */ = {isa = PBXFileReference; path = "CurrencyPicker-Prefix.pch"; sourceTree = "<group>"; };
+		F41E101D158A327500D8C7B0 /* CPAppDelegate.h */ = {isa = PBXFileReference; path = CPAppDelegate.h; sourceTree = "<group>"; };
+		F41E101E158A327500D8C7B0 /* CPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPAppDelegate.m; sourceTree = "<group>"; };
+		F41E1020158A327500D8C7B0 /* CPViewController.h */ = {isa = PBXFileReference; path = CPViewController.h; sourceTree = "<group>"; };
+		F41E1021158A327600D8C7B0 /* CPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPViewController.m; sourceTree = "<group>"; };
+		F41E1024158A327600D8C7B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CPViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F41E1007158A327500D8C7B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F41E100F158A327500D8C7B0 /* UIKit.framework in Frameworks */,
+				F41E1011158A327500D8C7B0 /* Foundation.framework in Frameworks */,
+				F41E1013158A327500D8C7B0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F41E0FFF158A327500D8C7B0 = {
+			isa = PBXGroup;
+			children = (
+				F41E1014158A327500D8C7B0 /* CurrencyPicker */,
+				F41E100D158A327500D8C7B0 /* Frameworks */,
+				F41E100B158A327500D8C7B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F41E100B158A327500D8C7B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F41E100A158A327500D8C7B0 /* CurrencyPicker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F41E100D158A327500D8C7B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F41E100E158A327500D8C7B0 /* UIKit.framework */,
+				F41E1010158A327500D8C7B0 /* Foundation.framework */,
+				F41E1012158A327500D8C7B0 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F41E1014158A327500D8C7B0 /* CurrencyPicker */ = {
+			isa = PBXGroup;
+			children = (
+				F41E101D158A327500D8C7B0 /* CPAppDelegate.h */,
+				F41E101E158A327500D8C7B0 /* CPAppDelegate.m */,
+				F41E1020158A327500D8C7B0 /* CPViewController.h */,
+				F41E1021158A327600D8C7B0 /* CPViewController.m */,
+				F41E1023158A327600D8C7B0 /* CPViewController.xib */,
+				F41E1015158A327500D8C7B0 /* Supporting Files */,
+			);
+			path = CurrencyPicker;
+			sourceTree = "<group>";
+		};
+		F41E1015158A327500D8C7B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F41E1016158A327500D8C7B0 /* CurrencyPicker-Info.plist */,
+				F41E1017158A327500D8C7B0 /* InfoPlist.strings */,
+				F41E101A158A327500D8C7B0 /* main.m */,
+				F41E101C158A327500D8C7B0 /* CurrencyPicker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F41E1009158A327500D8C7B0 /* CurrencyPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F41E1028158A327600D8C7B0 /* Build configuration list for PBXNativeTarget "CurrencyPicker" */;
+			buildPhases = (
+				F41E1006158A327500D8C7B0 /* Sources */,
+				F41E1007158A327500D8C7B0 /* Frameworks */,
+				F41E1008158A327500D8C7B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CurrencyPicker;
+			productName = CurrencyPicker;
+			productReference = F41E100A158A327500D8C7B0 /* CurrencyPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F41E1001158A327500D8C7B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CP;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Line In Web Design";
+			};
+			buildConfigurationList = F41E1004158A327500D8C7B0 /* Build configuration list for PBXProject "CurrencyPicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F41E0FFF158A327500D8C7B0;
+			productRefGroup = F41E100B158A327500D8C7B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F41E1009158A327500D8C7B0 /* CurrencyPicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F41E1008158A327500D8C7B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F41E1019158A327500D8C7B0 /* InfoPlist.strings in Resources */,
+				F41E1025158A327600D8C7B0 /* CPViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F41E1006158A327500D8C7B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F41E101B158A327500D8C7B0 /* main.m in Sources */,
+				F41E101F158A327500D8C7B0 /* CPAppDelegate.m in Sources */,
+				F41E1022158A327600D8C7B0 /* CPViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F41E1017158A327500D8C7B0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F41E1018158A327500D8C7B0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F41E1023158A327600D8C7B0 /* CPViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F41E1024158A327600D8C7B0 /* en */,
+			);
+			name = CPViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F41E1026158A327600D8C7B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F41E1027158A327600D8C7B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F41E1029158A327600D8C7B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CurrencyPicker/CurrencyPicker-Prefix.pch";
+				INFOPLIST_FILE = "CurrencyPicker/CurrencyPicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F41E102A158A327600D8C7B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CurrencyPicker/CurrencyPicker-Prefix.pch";
+				INFOPLIST_FILE = "CurrencyPicker/CurrencyPicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F41E1004158A327500D8C7B0 /* Build configuration list for PBXProject "CurrencyPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F41E1026158A327600D8C7B0 /* Debug */,
+				F41E1027158A327600D8C7B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F41E1028158A327600D8C7B0 /* Build configuration list for PBXNativeTarget "CurrencyPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F41E1029158A327600D8C7B0 /* Debug */,
+				F41E102A158A327600D8C7B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F41E1001158A327500D8C7B0 /* Project object */;
+}
