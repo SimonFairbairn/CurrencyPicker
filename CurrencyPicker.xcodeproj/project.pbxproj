@@ -15,6 +15,7 @@
 		F41E101F158A327500D8C7B0 /* CPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F41E101E158A327500D8C7B0 /* CPAppDelegate.m */; };
 		F41E1022158A327600D8C7B0 /* CPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41E1021158A327600D8C7B0 /* CPViewController.m */; };
 		F41E1025158A327600D8C7B0 /* CPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41E1023158A327600D8C7B0 /* CPViewController.xib */; };
+		F41E103C158A49BE00D8C7B0 /* Currency.m in Sources */ = {isa = PBXBuildFile; fileRef = F41E103B158A49BE00D8C7B0 /* Currency.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +23,17 @@
 		F41E100E158A327500D8C7B0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F41E1010158A327500D8C7B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F41E1012158A327500D8C7B0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		F41E1016158A327500D8C7B0 /* CurrencyPicker-Info.plist */ = {isa = PBXFileReference; path = "CurrencyPicker-Info.plist"; sourceTree = "<group>"; };
+		F41E1016158A327500D8C7B0 /* CurrencyPicker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CurrencyPicker-Info.plist"; sourceTree = "<group>"; };
 		F41E1018158A327500D8C7B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F41E101A158A327500D8C7B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F41E101C158A327500D8C7B0 /* CurrencyPicker-Prefix.pch */ = {isa = PBXFileReference; path = "CurrencyPicker-Prefix.pch"; sourceTree = "<group>"; };
-		F41E101D158A327500D8C7B0 /* CPAppDelegate.h */ = {isa = PBXFileReference; path = CPAppDelegate.h; sourceTree = "<group>"; };
+		F41E101C158A327500D8C7B0 /* CurrencyPicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CurrencyPicker-Prefix.pch"; sourceTree = "<group>"; };
+		F41E101D158A327500D8C7B0 /* CPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPAppDelegate.h; sourceTree = "<group>"; };
 		F41E101E158A327500D8C7B0 /* CPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPAppDelegate.m; sourceTree = "<group>"; };
-		F41E1020158A327500D8C7B0 /* CPViewController.h */ = {isa = PBXFileReference; path = CPViewController.h; sourceTree = "<group>"; };
+		F41E1020158A327500D8C7B0 /* CPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPViewController.h; sourceTree = "<group>"; };
 		F41E1021158A327600D8C7B0 /* CPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPViewController.m; sourceTree = "<group>"; };
 		F41E1024158A327600D8C7B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CPViewController.xib; sourceTree = "<group>"; };
+		F41E103A158A49BE00D8C7B0 /* Currency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Currency.h; path = ../Currency.h; sourceTree = "<group>"; };
+		F41E103B158A49BE00D8C7B0 /* Currency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Currency.m; path = ../Currency.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 		F41E1014158A327500D8C7B0 /* CurrencyPicker */ = {
 			isa = PBXGroup;
 			children = (
+				F41E103A158A49BE00D8C7B0 /* Currency.h */,
+				F41E103B158A49BE00D8C7B0 /* Currency.m */,
 				F41E101D158A327500D8C7B0 /* CPAppDelegate.h */,
 				F41E101E158A327500D8C7B0 /* CPAppDelegate.m */,
 				F41E1020158A327500D8C7B0 /* CPViewController.h */,
@@ -165,6 +170,7 @@
 				F41E101B158A327500D8C7B0 /* main.m in Sources */,
 				F41E101F158A327500D8C7B0 /* CPAppDelegate.m in Sources */,
 				F41E1022158A327600D8C7B0 /* CPViewController.m in Sources */,
+				F41E103C158A49BE00D8C7B0 /* Currency.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +282,7 @@
 				F41E102A158A327600D8C7B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

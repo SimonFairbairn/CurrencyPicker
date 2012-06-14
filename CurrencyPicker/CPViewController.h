@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CPViewController : UIViewController
+@interface CPViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+
+@property (strong, nonatomic) IBOutlet UIPickerView *picker;
+@property (weak, nonatomic) IBOutlet UILabel* localCurrency;
+@property (weak, nonatomic) IBOutlet UILabel* internationalCurrency;
+@property (weak, nonatomic) IBOutlet UILabel* country;
+
+- (IBAction) buttonPressed;
 
 @end
