@@ -35,15 +35,19 @@
         NSArray* countries = [NSLocale availableLocaleIdentifiers];
         
         for ( NSString* country in countries ) {
-            // Initiate the country
             Currency* currency = [[Currency alloc] initWithLocaleIdentifier:country];
+
             if ( currency ) {
-                [countryInfo setObject:currency forKey:currency.name];
-                [keptCurrencies addObject:currency.name];
+                if ( ![countryInfo objectForKey:currency.name] ) {
+                    [countryInfo setObject:currency forKey:currency.name];
+                    [keptCurrencies addObject:currency.name];
+                    
+                }
             }
             
         } 
-        _validCurrencies = keptCurrencies;
+        
+        _validCurrencies = [keptCurrencies sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
         _currencyDictionary = countryInfo;
     }
     return self;

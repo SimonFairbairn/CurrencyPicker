@@ -86,16 +86,13 @@
 		F41E1014158A327500D8C7B0 /* CurrencyPicker */ = {
 			isa = PBXGroup;
 			children = (
-				F41E103A158A49BE00D8C7B0 /* Currency.h */,
-				F41E103B158A49BE00D8C7B0 /* Currency.m */,
+				F458628E158DB33D00DB9E50 /* Model */,
 				F41E101D158A327500D8C7B0 /* CPAppDelegate.h */,
 				F41E101E158A327500D8C7B0 /* CPAppDelegate.m */,
 				F41E1020158A327500D8C7B0 /* CPViewController.h */,
 				F41E1021158A327600D8C7B0 /* CPViewController.m */,
 				F41E1023158A327600D8C7B0 /* CPViewController.xib */,
 				F41E1015158A327500D8C7B0 /* Supporting Files */,
-				F458628A158DA10C00DB9E50 /* CurrencyManager.h */,
-				F458628B158DA10C00DB9E50 /* CurrencyManager.m */,
 			);
 			path = CurrencyPicker;
 			sourceTree = "<group>";
@@ -109,6 +106,17 @@
 				F41E101C158A327500D8C7B0 /* CurrencyPicker-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F458628E158DB33D00DB9E50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F41E103A158A49BE00D8C7B0 /* Currency.h */,
+				F41E103B158A49BE00D8C7B0 /* Currency.m */,
+				F458628A158DA10C00DB9E50 /* CurrencyManager.h */,
+				F458628B158DA10C00DB9E50 /* CurrencyManager.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
