@@ -7,11 +7,12 @@
 //
 
 #import "CPViewController.h"
+#import "CurrencyManager.h"
 #import "Currency.h"
 
 @interface CPViewController ()
 
-@property (strong, nonatomic) Currency* currencyCodes;
+@property (strong, nonatomic) CurrencyManager* currencyCodes;
 
 
 @end
@@ -31,7 +32,7 @@
     
 
     
-    self.currencyCodes = [[Currency alloc] init];
+    self.currencyCodes = [[CurrencyManager alloc] init];
 
 }
 
@@ -49,10 +50,11 @@
 - (IBAction) buttonPressed {
     // NSInteger selectedCurrency = [self.picker selectedRowInComponent:0];
     
-    NSDictionary* item = [self.currencyCodes infoForCurrencyAtRow:[self.picker selectedRowInComponent:0]];
-    self.localCurrency.text = [item objectForKey:@"symbol"];
-    self.internationalCurrency.text = [item objectForKey:@"code"];
-    self.country.text = [item objectForKey:@"name"];
+    Currency* item = [self.currencyCodes infoForCurrencyAtRow:[self.picker selectedRowInComponent:0]];
+    
+    self.localCurrency.text = item.symbol;
+    self.internationalCurrency.text = item.code;
+    self.country.text = item.name;
 }
 
 
@@ -66,6 +68,7 @@
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView
 numberOfRowsInComponent:(NSInteger)component {
+    
     return self.currencyCodes.currencyCount;
 }
 

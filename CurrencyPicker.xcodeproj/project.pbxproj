@@ -17,6 +17,7 @@
 		F41E1025158A327600D8C7B0 /* CPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41E1023158A327600D8C7B0 /* CPViewController.xib */; };
 		F41E103C158A49BE00D8C7B0 /* Currency.m in Sources */ = {isa = PBXBuildFile; fileRef = F41E103B158A49BE00D8C7B0 /* Currency.m */; };
 		F41E103F158A572000D8C7B0 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = F41E103E158A572000D8C7B0 /* readme.md */; };
+		F458628C158DA10C00DB9E50 /* CurrencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F458628B158DA10C00DB9E50 /* CurrencyManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		F41E103A158A49BE00D8C7B0 /* Currency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Currency.h; path = ../Currency.h; sourceTree = "<group>"; };
 		F41E103B158A49BE00D8C7B0 /* Currency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Currency.m; path = ../Currency.m; sourceTree = "<group>"; };
 		F41E103E158A572000D8C7B0 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.md; sourceTree = "<group>"; };
+		F458628A158DA10C00DB9E50 /* CurrencyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrencyManager.h; sourceTree = "<group>"; };
+		F458628B158DA10C00DB9E50 /* CurrencyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 				F41E1021158A327600D8C7B0 /* CPViewController.m */,
 				F41E1023158A327600D8C7B0 /* CPViewController.xib */,
 				F41E1015158A327500D8C7B0 /* Supporting Files */,
+				F458628A158DA10C00DB9E50 /* CurrencyManager.h */,
+				F458628B158DA10C00DB9E50 /* CurrencyManager.m */,
 			);
 			path = CurrencyPicker;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 				F41E101F158A327500D8C7B0 /* CPAppDelegate.m in Sources */,
 				F41E1022158A327600D8C7B0 /* CPViewController.m in Sources */,
 				F41E103C158A49BE00D8C7B0 /* Currency.m in Sources */,
+				F458628C158DA10C00DB9E50 /* CurrencyManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

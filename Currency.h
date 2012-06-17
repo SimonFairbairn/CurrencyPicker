@@ -10,9 +10,12 @@
 
 @interface Currency : NSObject
 
-- (int) currencyCount;
-- (NSString *)titleForPickerForRow:(NSInteger)row;
-- (NSDictionary *)infoForCurrencyAtRow:(NSInteger)row;
+@property (strong, nonatomic) NSString* name;
+@property (strong, nonatomic) NSString* code;
+@property (strong, nonatomic) NSString* symbol;
+@property (strong, nonatomic) NSString* countryCode;
+@property (strong, nonatomic) NSString* pickerTitle;
 
-
+-(id) initWithCountryCode:(NSString *)countryCode forLocale:(NSLocale *) country;
+-(id) initWithLocaleIdentifier:(NSString *)identifier;
 @end

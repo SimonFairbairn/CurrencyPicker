@@ -10,73 +10,51 @@
 
 @interface Currency() 
 
-
-@property (strong, nonatomic) NSArray* validCurrencies;
-@property (strong, nonatomic) NSLocale* currentLocale;
-
 @end
 
 @implementation Currency
 
-@synthesize validCurrencies = _validCurrencies;
-@synthesize currentLocale = _currentLocale;
+@synthesize name = _name;
+@synthesize code = _code;
+@synthesize symbol = _symbol;
+@synthesize pickerTitle = _pickerTitle;
+@synthesize countryCode = _countryCode;
 
-- (Currency *) init {
+
+
+-(id)initWithCountryCode:(NSString *)countryCode forLocale:(NSLocale *)country {
+    
     self = [super init];
     if ( self ) {
-        NSLocale* currentLocale = [NSLocale currentLocale];
-        NSMutableArray* keptCurrencies = [[NSMutableArray alloc] init];        
-        NSArray* currencies = [NSLocale availableLocaleIdentifiers];
-        
-        for ( NSString* currency in currencies ) {
-            // Initiate the country
-            NSLocale *country = [[NSLocale alloc] initWithLocaleIdentifier:currency];
-            NSString *countryCode = [country objectForKey:NSLocaleCountryCode];   
 
-            // If the country is not null
-            if ( countryCode ) {
-                NSString *countryName = [currentLocale displayNameForKey:NSLocaleCountryCode value:countryCode];
-                //  symbol and currency code
-                NSString *localCurrencySymbol = [country objectForKey:NSLocaleCurrencySymbol];
-                NSString *currencyCode = [country objectForKey:NSLocaleCurrencyCode];
-                NSString *title = [NSString stringWithFormat:@"%@ %@: %@ (%@)", countryCode, countryName, localCurrencySymbol, currencyCode];
-                
-                
-                NSDictionary* countryInfo = [[NSDictionary alloc] initWithObjectsAndKeys:
-                                             countryName, @"name",
-                                             countryCode, @"countryCode", 
-                                             title, @"pickerTitle",
-                                             localCurrencySymbol, @"symbol",
-                                             currencyCode, @"code",
-                                             nil];
-                              
-                
-                [keptCurrencies addObject:countryInfo];
-            }
-            
-        } 
-        _validCurrencies = keptCurrencies;
-        _currentLocale = currentLocale;
-        
+        NSLocale* currentLocale = [NSLocale currentLocale];
+        _name = [currentLocale displayNameForKey:NSLocaleCountryCode value:countryCode];
+        _symbol = [country objectForKey:NSLocaleCurrencySymbol];
+        _code = [country objectForKey:NSLocaleCurrencyCode];
+        _pickerTitle = [NSString stringWithFormat:@"%@ %@: %@ (%@)", countryCode, self.name, self.symbol, self.code];          
     }
     return self;
-}
-
--(int)currencyCount {
-    return self.validCurrencies.count;
-}
-
-
--(NSString *)titleForPickerForRow:(NSInteger)row {
-
-    NSDictionary* item = [self.validCurrencies objectAtIndex:row];
-    return [item valueForKey:@"pickerTitle"];
-}
--(NSDictionary *)infoForCurrencyAtRow:(NSInteger)row {
-    return [self.validCurrencies objectAtIndex:row];   
     
 }
 
+-(id) initWithLocaleIdentifier:(NSString *)identifier {
+    
+    NSLocale *country = [[NSLocale alloc] initWithLocaleIdentifier:identifier];
+    NSString *countryCode = [country objectForKey:NSLocaleCountryCode];
 
+    if ( countryCode ) {
+        return [self initWithCountryCode:countryCode forLocale:country];
+        //  symbol and currency code
+    } else {
+        return nil;
+    }
+    
+}
+
+-(id) init {
+    // Get user's current locale
+    NSLocale* currentLocale = [NSLocale currentLocale];
+    return [self initWithCountryCode:[currentLocale objectForKey:NSLocaleCountryCode] forLocale:currentLocale];
+}
 
 @end
